@@ -1,0 +1,232 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+.chat-header  {
+  background-color: #8d9cc0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-stretch: semi-expanded;
+  font-size: larger;
+  font-size: 150%;
+  letter-spacing: 4px;
+  color: rgb(251, 254, 255);
+  font-weight: bolder;
+  height:54px;
+  
+}
+/* .inbox
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:100%;
+  justify-content: center;
+  height: 100%;
+  /* margin-left: 550px; */
+/* } */
+.chat-head {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: cadetblue;  
+  height:fit-content;
+}
+
+.main{
+ height:100%;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  /* overflow-y:hidden; */
+
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  /* margin: 10px 20px; */
+}
+.messages{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-between;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0px 10px;  
+  /* height:100%; */
+  overflow-y: auto;
+}
+.time
+{
+  font-weight: 100;
+  color: #757575;
+  font-size: 14px;
+  margin: 0;
+}
+
+.con{
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  margin: 10px 0;
+
+}
+.cons{
+  display:flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin: 10px 0;
+}
+.margin{
+  padding:20px;
+  margin-right: 10px;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height:100%;
+  overflow-y: auto;
+}
+#root{
+  height:100vh;
+}
+.chat-body{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  height:cal(100% - 54px);
+  overflow-y: hidden;
+}
+.text-message {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.send-button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sender {
+  border: 1px;
+  margin: 5px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:5px;
+  background-color: rgb(217, 169, 139);
+  border-radius: 10px;
+}
+.receiver{
+  border: 1px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:5px;
+  background-color: rgb(205, 213, 133);
+  border-radius: 10px;
+}
+/* IMPROVED CSS */
+.chat-logs{
+  margin:5px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  /* flex-wrap: wrap; */
+}
+
+.box {
+  width: 300px;
+  height: 70px;
+  /* border: 1px solid #757575; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  display: flex;  
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 5px;
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: #d8f3f4;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.content-container {
+  width: 75%;
+  height: 100%;
+
+}
+
+/* .content-container > p {
+  margin: 0;
+} */
+
+.avatar-container {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  height: 64px;
+  width: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.light {
+  font-weight: 100;
+  color: #757575;
+  font-size: 14px;
+}
+
+.name {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.chat-window{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  overflow-y:hidden;
+  justify-content: flex-start;
+  background-color: rgb(219, 211, 212);
+}
